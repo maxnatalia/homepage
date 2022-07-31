@@ -1,0 +1,9 @@
+.main {
+    border-style: groove;
+    border-color: #010403e5;
+    border-radius: 20px/40px;
+    padding: 10px;
+    outline-style: groove;
+    outline-offset: 2px;
+    outline-color: #f0f6f6;
+}

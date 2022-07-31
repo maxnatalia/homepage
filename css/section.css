@@ -1,0 +1,116 @@
+.section {
+    padding-top: 20px;
+}
+
+.section__header {
+    background-color: #9db1aae5;
+    color: #010403e5;
+    border-style: groove;
+    border-color: #010403e5;
+    border-radius: 20px/40px;
+    box-shadow: inset 5px -5px 45px 0 #f0f6f6;
+    outline-style: groove;
+    outline-offset: 2px;
+    outline-color: #f0f6f6;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 5px -4px 10px #776a6a;
+    margin-top: 20px;
+}
+
+.section__subHeader {
+    background-color: #e3e6e5e5;
+    color: #010403e5;
+    box-shadow: inset 5px -5px 45px 0 #f0f6f6;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 8px -3px 15px #776a6a;
+}
+
+.section__information {
+    background-color: #cedbd6e5;
+}
+
+.section__button {
+    border-style: groove;
+    border-color: #010403e5;
+    border-radius: 20px/40px;
+    padding: 10px;
+    outline-style: groove;
+    outline-offset: 2px;
+    outline-color: #f0f6f6;
+    font-size: 16px;
+}
+
+.section__button:hover {
+    font-size: 18px;
+}
+
+.section__list {
+    padding-left: 20px;
+}
+
+.section__listItem {
+    list-style-type: circle;
+    margin: auto;
+}
+
+.section__link {
+    text-decoration: none;
+    color: #2121cb;
+}
+
+.section__link:hover {
+    text-decoration: underline;
+}
+
+.js-containerContact {
+    display: none;
+}
+
+.section__containerButton {
+    height: 100px;
+}
+
+.section__buttonContact {
+    border-style: groove;
+    border-color: #010403e5;
+    border-radius: 20px/40px;
+    padding: 10px;
+    outline-style: groove;
+    outline-offset: 2px;
+    outline-color: #f0f6f6;
+    font-size: 16px;
+}
+
+.section__buttonContact:hover {
+    font-size: 18px;
+}
+
+.section__paragraph {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section__img {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%
+}
+
+.section__listUnordered {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.section__itemUnordered {
+    list-style-type: square;
+}
+
+.section__element {
+    line-height: 2.5;
+    font-weight: 700;
+    text-shadow: 5px -4px 10px #776a6a;
+}
