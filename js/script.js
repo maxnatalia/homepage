@@ -1,27 +1,44 @@
-console.log("Cześć!");
+{
+  const welcome = () => {
+    console.log("Cześć!");
+  }
 
-let buttonFridaVote = document.querySelector(".js-buttonFridaVote");
-let buttonFelekVote = document.querySelector(".js-buttonFelekVote");
-let buttonFrankVote = document.querySelector(".js-buttonFrankVote");
-let textVote = document.querySelector(".js-textVote");
+  const textVote = document.querySelector(".js-textVote");
+  const buttonFridaVote = document.querySelector(".js-buttonFridaVote");
+  const buttonFelekVote = document.querySelector(".js-buttonFelekVote");
+  const buttonFrankVote = document.querySelector(".js-buttonFrankVote");
 
-buttonFridaVote.addEventListener("click", () => {
-  textVote.innerHTML = ("Frida najczęściej mówi <i>Halo</i> i <i>Naprawdę???</i>");
-});
+  const onChangedTekstFrida = () => {
+    textVote.innerHTML = ("Frida najczęściej mówi <i>Halo</i> i <i>Naprawdę???</i>");
+  };
 
-buttonFelekVote.addEventListener("click", () => {
-  textVote.innerHTML = ("Felek najczęściej zadaje pytanie <i>Co Wy to robicie?</i> często też mówi <i>Cichutkooo</i>");
-});
+  const onChangedTekstFelek = () => {
+    textVote.innerHTML = ("Felek najczęściej zadaje pytanie <i>Co Wy to robicie?</i> często też mówi <i>Cichutkooo</i>");
+  };
 
-buttonFrankVote.addEventListener("click", () => {
-  textVote.innerHTML = ("Frank często pyta <i> Co chcesz? </i>")
-});
+  const onChangedTekstFrank = () => {
+    textVote.innerHTML = ("Frank często pyta <i> Co chcesz? </i>");
+  };
 
-let buttonContact = document.querySelector(".js-buttonContact");
-let containerContact = document.querySelector(".js-containerContact");
+  const toggleContact = () => {
+    containerContact.classList.toggle("js-containerContact");
+  };
 
-buttonContact.addEventListener("click", () => {
-  containerContact.classList.toggle("js-containerContact");
-  buttonContact.innerText = containerContact.classList.contains("js-containerContact")
-    ? "Pokaż kontakt" : "Ukryj kontakt";
-}); 
+  const onChangedContact = () => {
+    buttonContact.innerText = containerContact.classList.contains("js-containerContact")
+      ? "Pokaż kontakt" : "Ukryj kontakt";
+  };
+
+  const containerContact = document.querySelector(".js-containerContact");
+  const buttonContact = document.querySelector(".js-buttonContact");
+
+  const init = () => {
+    buttonContact.addEventListener("click", toggleContact);
+    buttonContact.addEventListener("click", onChangedContact);
+    buttonFridaVote.addEventListener("click", onChangedTekstFrida);
+    buttonFelekVote.addEventListener("click", onChangedTekstFelek);
+    buttonFrankVote.addEventListener("click", onChangedTekstFrank);
+  }
+  welcome();
+  init();
+}
