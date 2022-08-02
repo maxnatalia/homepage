@@ -19,6 +19,6 @@ Now, I can specify such technologies and conventions as:
 - JavaScript
 - Markdown
 - BEM convention
-- ES6
+- ES6+features
 
 
