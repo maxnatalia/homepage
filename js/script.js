@@ -4,9 +4,6 @@
   }
 
   const textVote = document.querySelector(".js-textVote");
-  const buttonFridaVote = document.querySelector(".js-buttonFridaVote");
-  const buttonFelekVote = document.querySelector(".js-buttonFelekVote");
-  const buttonFrankVote = document.querySelector(".js-buttonFrankVote");
 
   const onChangedTekstFrida = () => {
     textVote.innerHTML = ("Frida najczęściej mówi <i>Halo</i> i <i>Naprawdę???</i>");
@@ -21,23 +18,22 @@
   };
 
   const toggleContact = () => {
-    containerContact.classList.toggle("js-containerContact");
+    const containerContact = document.querySelector(".js-containerContact");
+    const themeNameButton = document.querySelector(".js-themeNameButton");
+    containerContact.classList.toggle("section__containerContact");
+    themeNameButton.innerText = containerContact.classList.contains("section__containerContact")
+      ? "Pokaż" : "Ukryj";
   };
-
-  const onChangedContact = () => {
-    buttonContact.innerText = containerContact.classList.contains("js-containerContact")
-      ? "Pokaż kontakt" : "Ukryj kontakt";
-  };
-
-  const containerContact = document.querySelector(".js-containerContact");
-  const buttonContact = document.querySelector(".js-buttonContact");
 
   const init = () => {
-    buttonContact.addEventListener("click", toggleContact);
-    buttonContact.addEventListener("click", onChangedContact);
+    const buttonFridaVote = document.querySelector(".js-buttonFridaVote");
+    const buttonFelekVote = document.querySelector(".js-buttonFelekVote");
+    const buttonFrankVote = document.querySelector(".js-buttonFrankVote");
     buttonFridaVote.addEventListener("click", onChangedTekstFrida);
     buttonFelekVote.addEventListener("click", onChangedTekstFelek);
     buttonFrankVote.addEventListener("click", onChangedTekstFrank);
+    const buttonContact = document.querySelector(".js-buttonContact");
+    buttonContact.addEventListener("click", toggleContact);
   }
   welcome();
   init();
