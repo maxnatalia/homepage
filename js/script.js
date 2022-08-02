@@ -3,6 +3,11 @@
     console.log("Cześć!");
   }
 
+  const textVote = document.querySelector(".js-textVote");
+  const buttonFridaVote = document.querySelector(".js-buttonFridaVote");
+  const buttonFelekVote = document.querySelector(".js-buttonFelekVote");
+  const buttonFrankVote = document.querySelector(".js-buttonFrankVote");
+
   const onChangedTekstFrida = () => {
     textVote.innerHTML = ("Frida najczęściej mówi <i>Halo</i> i <i>Naprawdę???</i>");
   };
@@ -15,11 +20,6 @@
     textVote.innerHTML = ("Frank często pyta <i> Co chcesz? </i>");
   };
 
-  const textVote = document.querySelector(".js-textVote");
-  const buttonFridaVote = document.querySelector(".js-buttonFridaVote");
-  const buttonFelekVote = document.querySelector(".js-buttonFelekVote");
-  const buttonFrankVote = document.querySelector(".js-buttonFrankVote");
-  
   const toggleContact = () => {
     containerContact.classList.toggle("js-containerContact");
   };
@@ -39,7 +39,6 @@
     buttonFelekVote.addEventListener("click", onChangedTekstFelek);
     buttonFrankVote.addEventListener("click", onChangedTekstFrank);
   }
-    welcome();
-
+  welcome();
   init();
 }
