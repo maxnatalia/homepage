@@ -61,7 +61,7 @@
 }
 
 .aside__link:hover {
-    font-size: 18px;
+    font-weight: bold;
 }
 
 .aside__link:active {

@@ -42,10 +42,12 @@
     outline-offset: 2px;
     outline-color: #f0f6f6;
     font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 .section__button:hover {
-    font-size: 18px;
+    font-weight: bold;
 }
 
 .section__list {
@@ -83,6 +85,7 @@
     outline-offset: 2px;
     outline-color: #f0f6f6;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .section__buttonContact:hover {
