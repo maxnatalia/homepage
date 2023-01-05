@@ -25,6 +25,7 @@
   <link href="css/section.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/table.css" rel="stylesheet" />
+  <link href="css/modal.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -107,7 +108,12 @@
         <h3 class="section__subHeader">Zagłosuj!!!</h3>
         <p>Która papuga najbardziej Ci się spodobała? Wybierz <strong>teraz</strong> i dowiedz się jakie są ulubione
           słowa wybranej przez Ciebie papugi:</p>
-        <p class="section__paragraph js-textVote"></p>
+
+        <div class="modal modal__hidden js-modal">
+          <button class="modal__button js-closeButton">X</button>
+          <p class="modal__paragraph js-textVote"></p>
+        </div>
+        <div class="modal__overlay modal__hidden js-overlay"></div>
         <div class="section__wrapper">
           <button class="section__button js-buttonFridaVote">Frida</button>
           <button class="section__button js-buttonFelekVote">Felek</button>
