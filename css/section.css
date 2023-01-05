@@ -33,21 +33,34 @@
     background-color: #cedbd6e5;
 }
 
+.section__wrapper {
+    text-align: center;
+}
+
 .section__button {
+    display: inline-block;
     border-style: groove;
     border-color: #010403e5;
     border-radius: 20px/40px;
-    padding: 10px;
+    padding: 10px 15px;
     outline-style: groove;
     outline-offset: 2px;
     outline-color: #f0f6f6;
-    font-size: 16px;
-    margin: 0 5px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 5px;
     cursor: pointer;
 }
 
 .section__button:hover {
-    font-weight: bold;
+    background-color: #9db1aae5;
+    color: #f0f6f6;
+}
+
+.section__paragraph {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .section__list {
