@@ -11,7 +11,7 @@
   const openModal = () => {
     overlay.classList.remove("modal__hidden");
     modal.classList.remove("modal__hidden");
-  }
+  };
 
   const closeModal = () => {
     overlay.classList.add("modal__hidden");
@@ -24,7 +24,7 @@
         closeModal();
       }
     });
-  }
+  };
 
   const onChangedTekstFrida = () => {
     openModal();
@@ -57,6 +57,6 @@
     buttonFrankVote.addEventListener("click", onChangedTekstFrank);
     buttonContact.addEventListener("click", toggleContact);
     closeKeyboardModal();
-  }
+  };
   init();
 }
