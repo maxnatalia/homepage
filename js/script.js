@@ -8,6 +8,14 @@
   const closeButton = document.querySelector(".js-closeButton");
   const buttonContact = document.querySelector(".js-buttonContact");
 
+  const scrollEl = document.querySelector(".js-scroll");
+  window.addEventListener("scroll", () => {
+    window.scrollY > 100 ?
+      scrollEl.classList.remove("scrollContainer__hidden")
+      :
+      scrollEl.classList.add("scrollContainer__hidden");
+  });
+
   const openModal = () => {
     overlay.classList.remove("modal__hidden");
     modal.classList.remove("modal__hidden");
