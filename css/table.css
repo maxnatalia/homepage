@@ -1,5 +1,5 @@
 .table {
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 .table__main {
@@ -33,6 +33,4 @@
 .table__img {
     width: 150px;
     height: 150px;
-
 }
-
