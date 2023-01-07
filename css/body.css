@@ -5,3 +5,18 @@
     margin: auto;
     padding: 20px;
 }
+
+.scrollContainer {
+    background-color: #dc952a;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 140px;
+    z-index: 2;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scrollContainer__hidden {
+    display: none;
+}
