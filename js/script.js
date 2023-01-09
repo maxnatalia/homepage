@@ -11,9 +11,9 @@
   const scrollEl = document.querySelector(".js-scroll");
   window.addEventListener("scroll", () => {
     window.scrollY > 100 ?
-      scrollEl.classList.remove("scrollContainer__hidden")
+      scrollEl.classList.remove("scroll--hidden")
       :
-      scrollEl.classList.add("scrollContainer__hidden");
+      scrollEl.classList.add("scroll--hidden");
   });
 
   const openModal = () => {
