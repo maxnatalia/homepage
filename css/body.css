@@ -3,33 +3,6 @@
     line-height: 1.5;
     max-width: 1170px;
     margin: auto;
-    padding: 45px;
-}
-
-.scrollContainer {
-    position: fixed;
-    bottom: 10%;
-    right: 250px;
-    z-index: 2;
-    padding: 10px;
-    cursor: pointer;
-    padding: 5px;
-    border-style: groove;
-    border-color: #7db19fe5;
-    border-radius: 20px/40px;
-    outline-style: groove;
-    outline-color: #f0f6f6;
-    box-shadow: inset 5px -5px 25px 0 #f0f6f6;
-}
-
-.scrollContainer:hover {
-    background-color: #9db1aae5;
-}
-
-.scrollContainer__hidden {
-    display: none;
-}
-
-.scrollSpan {
-    text-decoration: none;
+    padding: 20px;
+    position: relative;
 }
