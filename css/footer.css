@@ -12,5 +12,30 @@
     font-weight: 700;
     text-align: center;
     text-shadow: 5px -4px 10px #776a6a;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.scroll {
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 2;
+    padding: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-style: groove;
+    border-color: #7db19fe5;
+    border-radius: 20px/40px;
+    outline-style: groove;
+    outline-color: #f0f6f6;
+    box-shadow: inset 5px -5px 25px 0 #f0f6f6;
+}
+
+.scroll:hover {
+    background-color: #9db1aae5;
+}
+
+.scroll--hidden {
+    display: none;
 }
